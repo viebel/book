@@ -1,4 +1,5 @@
 .rebel_readline_history
+.idea/
 pom.xml
 pom.xml.asc
 *.jar
