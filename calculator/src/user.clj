@@ -1,16 +1,12 @@
-(ns user
+#_(ns user
   (:require [hawk.core :as hawk]
             [clojure.java.io :as io]
             [clojure.tools.namespace.repl :as repl]))
 
-(defn foo-p  []
-  (print "hello user"))
 
-(print "hello user")
+#_(repl/set-refresh-dirs (io/file "src/calculator"))
 
-(repl/set-refresh-dirs (io/file "src/calculator"))
-
-(hawk/watch! [{:paths ["src/calculator"]
+#_(hawk/watch! [{:paths ["src/calculator"]
                :handler (fn [ctx e]
                           (#_future
                             (repl/refresh)))}])
