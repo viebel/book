@@ -1,0 +1,2 @@
+
+{:deps {viebel/gadjett {:mvn/version "0.5.2"}}}
